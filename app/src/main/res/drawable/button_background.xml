@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <corners android:radius="18dp"  >
+
+        </corners>
+        <gradient android:startColor="#DCEDC8" android:endColor="#B2FF59"
+            android:angle="180"></gradient>
+
+
+</shape>
+
+<!-- buttonbackground.xml
+        boxshape.xml
+        styles.xml
+        backgroundgrad.xml
+        #555454-->

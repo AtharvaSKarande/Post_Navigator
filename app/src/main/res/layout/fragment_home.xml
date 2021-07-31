@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backscreen"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="monospace"
+                android:paddingLeft="14dp"
+                android:shadowColor="#424040"
+                android:text="Add package information"
+                android:textAlignment="center"
+                android:textColor="#353434"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/borders"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+
+                <EditText
+                    android:id="@+id/from_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#01579B"
+                    android:hint="Senders address (From)"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#01579B" />
+
+
+                <EditText
+                    android:id="@+id/to_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#01579B"
+                    android:hint="Receivers address (To)"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#01579B" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/id_statespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dropdown" />
+
+
+                <Spinner
+                    android:id="@+id/id_districtspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:spinnerMode="dropdown" />
+
+
+                <EditText
+                    android:id="@+id/weight_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#01579B"
+                    android:hint="Weight in grams"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#01579B" />
+
+                <EditText
+                    android:id="@+id/pincode_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#01579B"
+                    android:hint="Pincode of receiver"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#01579B" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/type_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="Type"
+                        android:textColor="#01579B"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="Add package"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/qr_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

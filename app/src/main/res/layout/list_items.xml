@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/type"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/ic_launcher" />
+            <!--            app:civ_border_color="#3f51b5"-->
+            <!--            app:civ_border_width="4dp" />-->
+
+            <TextView
+                android:id="@+id/primaryKey"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/type"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Primary Key"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/primaryKeyFromDB"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/primaryKey"
+                android:layout_toRightOf="@id/type"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="11110000"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/pincodeFromDB"
+                android:layout_width="80dp"
+                android:layout_height="30sp"
+                android:layout_below="@id/pincode"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="123456"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/weightFromDB"
+                android:layout_width="100dp"
+                android:layout_height="30sp"
+                android:layout_below="@id/weight"
+                android:layout_toRightOf="@id/pincodeFromDB"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="30kg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/statusFromDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/status"
+                android:layout_toRightOf="@id/weightFromDB"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Out for delivery"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pincode"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Pin Code" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/primaryKeyFromDB"
+                android:layout_toRightOf="@id/pincode"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Weight (gm)" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/primaryKeyFromDB"
+                android:layout_toRightOf="@id/weight"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Status" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

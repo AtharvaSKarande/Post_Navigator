@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "127023790756",
+    "project_id": "postnav-ce856",
+    "storage_bucket": "postnav-ce856.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127023790756:android:d0acec97df8c59db718431",
+        "android_client_info": {
+          "package_name": "com.project.postnav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127023790756-8uuptfbhlnq1doo4cauubuue2ku9s46t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.postnav",
+            "certificate_hash": "f7329e2b857464af3dada54175708fc9a1573d7a"
+          }
+        },
+        {
+          "client_id": "127023790756-e7mohj70g7ua7nkf1a3qu6r1j2ka964g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtvcXoul0GGgeR3ALrvBhs6rQHbmSGevU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127023790756-e7mohj70g7ua7nkf1a3qu6r1j2ka964g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
